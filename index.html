@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Henergi</title>
+    <link rel="stylesheet" href="src/css/global.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<body>
+    <div class="content" id="content">
+        <header class="header">
+            <video autoplay muted loop class="header-video">
+                <source src="src/assets/footage-video-top.mp4" type="video/mp4">
+            </video>
+
+            <div class="header-content">
+                <h1><em>Changing your way of</em> <b>energizing the world!</b></h1>
+            </div>
+
+            <div class="header-slider-wrapper">
+                <div class="header-slider-controls">
+                    <a href="#" class="control" id="prev"> <em class="fa fa-angle-left"></em> </a>
+                    <a href="#" class="control" id="prox"> <em class="fa fa-angle-right"></em> </a>
+                </div>
+
+                <div class="header-slider">
+
+                    <ul id="header-slider">
+                        <li>
+                            <h5>
+                                #Be with us
+                            </h5>
+                            <p>
+                                You can allow us to install some pieces on your environment and make your office more sustainable!
+                            </p>
+                        </li>
+
+                        <li>
+                            <h5>
+                                #more friends
+                            </h5>
+                            <p>
+                                Proud to announce the partner CloudForest. Now new frontiers are going to appear, but we're growing to you.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h5>
+                                #Run Henergi run
+                            </h5>
+                            <p>
+                                Henergi is now providing energy to racing track lighting on the biggest event of runners in Brazil, the São Silvestre one.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar inactive" id="navbar">
+            <div class="navbar-brand">Henergi</div>
+            <div class="column">
+                <ul class="navbar-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Concept</a></li>
+                    <li><a href="#" data-page="login">Login</a></li>
+                </ul>
+
+                <div class="navbar-button" id="navbar-button">
+                    <div class="navbar-button-hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-additional">
+                <ul class="additional-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Concept</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="additional-info">
+                    <span class="phrase">Be ecological, be sustainable, be unique, be Henergi</span>
+
+                    <div class="locations">
+                        <div class="column">
+                            <div class="local rightAnimation">
+                                <span>Fortaleza</span>
+                                <span>+55 (85) 98924-8830</span>
+                            </div>
+                            <div class="local rightAnimation">
+                                <span>Quixadá</span>
+                                <span>+55 (88) 99937-7113</span>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="local rightAnimation">
+                                <span>Cascavel</span>
+                                <span>+55 (85) 99606-2144</span>
+                            </div>
+                            <div class="social-media rightAnimation">
+                                <a href="#"> <div class="fab fa-facebook"></div> </a>
+                                <a href="#"> <div class="fab fa-instagram"></div> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overlay"></div>
+            </div>
+        </nav>
+    </div>
+
+
+    <section class="section">
+        <div class="overlay" id="overlay-section" data-page="login"></div>
+
+        <div class="container" id="login">
+            <a href="#" class="close" data-page="login"><div class="fa fa-times"></div></a>
+
+            <div class="loading-login" id="loader">
+                <div class="loader"></div>
+            </div>
+
+            <h1>Login</h1>
+
+            <form id="login-form">
+                <div class="input-form" id="input-control-email">
+                    <label for="name">E-mail</label>
+                    <input type="email" name="email">
+                    <small id="input-control-email-message"></small>
+                </div>
+
+                <div class="input-form" id="input-control-password">
+                    <label for="name">Password</label>
+                    <input type="password" name="password">
+                    <small id="input-control-password-message"></small>
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="toast" id="toast">
+        <span id="toast-message"></span>
+    </div>
+    <script src="src/js/global.js"></script>
+
+</body>
+</html>
